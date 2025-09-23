@@ -9,7 +9,7 @@ html {
 body { 
     color: var(--text);
     background: var(--background);
-    font-family: "Lacquer";
+    font-family: "Lacquer"
 }
 
 h1,
@@ -17,9 +17,6 @@ h2,
 h3 {
     color: var(--primary);
     font-family: "Agu display";
-}
-p {
-    background: var(--accent);
 }
 li::marker {
     color:var(--secondary);
@@ -31,4 +28,12 @@ img {
     border-radius: 16px;
     background: var(--text);
 }
-
+.sample {
+    font-weight: 700;
+    font-size: 100px;
+    font-style: italic;
+    font-family: "Agu display";
+}
+.digger {
+    text-shadow: #998674 0+3px;
+}
