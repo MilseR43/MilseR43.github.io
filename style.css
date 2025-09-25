@@ -1,9 +1,11 @@
 html {
-    --text: #ebe7ed;
-    --background: #0a080b;
+    --text: #cac3e3;
+    --background: #0a0a24;
     --primary: #bdafc4;
     --secondary: #604647;
     --accent: #998674;
+    --dt:#251d40; 
+    --dark-gold: #3C3105;
 }
 
 body { 
@@ -19,7 +21,7 @@ h3 {
     font-family: "Agu display";
 }
 li::marker {
-    color:var(--secondary);
+    color:var(--primary);
 }
 
 img {
@@ -35,5 +37,16 @@ img {
     font-family: "Agu display";
 }
 .digger {
-    text-shadow: #998674 0+3px;
+    border: 3.1px solid var(--dt);
+    border-radius: 12px;
+    margin: 15px;
+    padding: 3px;
+    width: 620px;
+    background:var(--dark-gold);
+}
+.sigma {
+    border-style:dotted;
+    border-radius: 10px;
+    height:52px;
+    width: 250px;
 }
