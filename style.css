@@ -11,9 +11,8 @@ html {
 body { 
     color: var(--text);
     background: var(--background);
-    font-family: "Lacquer"
+    font-family: "lacquer"
 }
-
 h1,
 h2,
 h3 {
@@ -42,7 +41,7 @@ img {
     margin: 15px;
     padding: 3px;
     width: 620px;
-    background:var(--dark-gold);
+    background:var(--dt);
 }
 .sigma {
     border-style:dotted;
