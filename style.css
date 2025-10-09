@@ -1,53 +1,53 @@
 html {
-    --text: #cac3e3;
-    --background: #0a0a24;
-    --primary: #bdafc4;
-    --secondary: #604647;
-    --accent: #998674;
-    --dt:#251d40; 
-    --dark-gold: #3C3105;
-    --text2:#ecede7;
-    --background2
-}
+        --text: #cac3e3;
+            --background: #0a0a24;
+                --primary: #bdafc4;
+                    --secondary: #604647;
+                        --accent: #998674;
+                            --dt:#251d40; 
+                                --dark-gold: #3C3105;
+                                    --text2:#ecede7;
+                                        --background2
+                                        }
+                                        body { 
+                                            color: var(--text);
+                                                background: var(--background)
+                                                    font-family: "lacquer"
+                                                    }
+                                                    h1,
+                                                    h2,
+                                                    h3 {
+                                                        color: var(--primary);
+                                                            font-family: "Agu display";
+                                                            }
+                                                            li::marker {
+                                                                color:var(--primary);
+                                                                }
 
-body { 
-    color: var(--text);
-    background: var(--background);
-    font-family: "lacquer"
-}
-h1,
-h2,
-h3 {
-    color: var(--primary);
-    font-family: "Agu display";
-}
-li::marker {
-    color:var(--primary);
-}
-
-img {
-    padding:1%;
-    border: 4px solid var(--primary);
-    border-radius: 16px;
-    background: var(--text);
-}
-.sample {
-    font-weight: 700;
-    font-size: 100px;
-    font-style: italic;
-    font-family: "Agu display";
-}
-.digger {
-    border: 3.1px solid var(--dt);
-    border-radius: 12px;
-    margin: 15px;
-    padding: 3px;
-    width: 620px;
-    background:var(--dt);
-}
-.sigma {
-    border-style:dotted;
-    border-radius: 10px;
-    height:52px;
-    width: 250px;
+                                                                img {
+                                                                    padding:1%;
+                                                                        border: 4px solid var(--primary);
+                                                                            border-radius: 16px;
+                                                                                background: var(--text);
+                                                                                }
+                                                                                .sample {
+                                                                                    font-weight: 700;
+                                                                                        font-size: 100px;
+                                                                                            font-style: italic;
+                                                                                                font-family: "Agu display";
+                                                                                                }
+                                                                                                .digger {
+                                                                                                    border: 3.1px solid var(--dt);
+                                                                                                        border-radius: 12px;
+                                                                                                            margin: 15px;
+                                                                                                                padding: 3px;
+                                                                                                                    width: 620px;
+                                                                                                                        background:var(--dt);
+                                                                                                                        }
+                                                                                                                        .sigma {
+                                                                                                                            border-style:dotted;
+                                                                                                                                border-radius: 10px;
+                                                                                                                                    height:52px;
+                                                                                                                                        width: 250px;
+                                                                                                                                        }
 }
