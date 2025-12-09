@@ -4,32 +4,41 @@ html {
     --primary: #bdafc4;
     --secondary: #604647;
     --accent: #998674;
-    --dt:#251d40; 
+    --dt: #251d40;
     --dark-gold: #3C3105;
-    --text2:#ecede7;
+    --text2: #ecede7;
     --background2: #23230a;
 }
-body { 
-    color: var(--text);
+
+body {
+    color: var(--text2);
     background: var(--background);
     font-family: "lacquer";
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
 }
+
 h1,
 h2,
 h3 {
-     color: var(--text);
+    color: var(--text2);
     font-family: "Agu display";
+    background: var(--secondary);
+    border: 4px solid var(--accent);
+    padding: 5px;
 }
+
 li::marker {
-    color:var(--primary);
+    color: var(--accent);
 }
 
 img {
-    padding:1%;
-    border: 4px solid var(--primary);
+    padding: 1%;
+    border: 4px solid var(--accent);
     border-radius: 16px;
-    background: var(--text);
+    background: var(--secondary);
 }
 
 .sample {
@@ -39,34 +48,57 @@ img {
     font-family: "Agu display";
 }
 
-.digger {
+.paragraphs {
     border: 3.1px solid var(--dt);
     border-radius: 12px;
     margin: 15px;
     padding: 3px;
     width: 620px;
-    background:var(--dt);
+    background: var(--dt);
 }
 
-.sigma {
-    border-style:dotted;
-    border-radius: 30px;
-    height:156px;
-    width: 750px;
-    font-size: 604.81%;
+.title {
+    height: 210px;
+    width: 710px;
+    border-radius: 20px;
+    border: 10px solid var(--accent);
+    padding:20px;
+    align-items: flex-end;
+    background: var(--secondary);
 }
+
+.title2 {
+    font-size: 4rem;
+}
+
 .links {
     color: var(--text2);
 }
+
 .center {
     display: flex;
-    justify-content:center;
-    align-content:center;
+    justify-content: center;
+    align-content: center;
 }
+
 .everything {
     display: flex;
     justify-content: center;
 }
+
 .top {
-    display: flex; justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    gap: 100.67px;
+}
+
+.topborder{
+     border-radius: 20px;
+    border: 10px solid var(--accent);
+    padding:20px;
+     display: flex;
+    justify-content: space-between;
+    gap: 100.67px;
+    height: 57px;
+    background:var(--secondary);
 }
