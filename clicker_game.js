@@ -18,6 +18,10 @@ const clickCountDisplay=document.getElementById("clickCountDisplay");
 
 const ekhSfx=document.getElementById("ekhSfx");
 
+const Upgrade1Display=document.getElementById("Upgrade1Display");
+
+const costForEquipment=document.getElementById("costForEquipment");
+
 let clickCount = 0;
 
 let costOfUpgrade1= 10;
@@ -26,10 +30,15 @@ let multiplier=1;
 
 let upgradeCost=2;
 
-let costOfSlotMachine=100;
+let costOfSlotMachine=1;
+
+setTimeout(()=>{
+const sometext=document.getElementById("Upgrade1Display")
+}
+);
 
 function clicksDisplaied(){
-    clickCountDisplay.innerText="you have clicked the button: "+ clickCount + " times!"
+    clickCountDisplay.innerText=clickCount + " Brownies!"
 }
 
 clickButton.addEventListener("click", ()=>{
@@ -45,23 +54,24 @@ if (clickCount >= costOfUpgrade1){
     multiplier++;
     costOfUpgrade1*=2;
     clicksDisplaied();
-    Upgrade1.innerText= "upgrade for "+ costOfUpgrade1 + " clicks"
+    costForEquipment.innerText= "Buy better equipment for "+ costOfUpgrade1 + " Brownies?"
+    Upgrade1Display.innerText="Now you bake "+ multiplier +" brownies per click!"
 }
 else{
-    clickCountDisplay.innerText="not enough clicks."
+    clickCountDisplay.innerText="not enough brownies."
 }
 
 });
 SlotMachine.addEventListener("click", ()=>{
 if(clickCount >= costOfSlotMachine){
     clickCount-= costOfSlotMachine;
+    clicksDisplaied();
     let chance = Math.random();
-    if (chance < 0.1){
+    if (chance < 1){
     SlotMachine.innerText="Great Plunder!!! you Win common prize, keep spinning for 100 clicks?";
     slotMachineWinSfx.play();
     slotMachineWinSfx.currentTime=0;
     slotMachineWinImg.hidden=false;
-
 }
         else{
         SlotMachine.innerText="you Lose, try again for 100 clicks?";
@@ -75,6 +85,7 @@ if(clickCount >= costOfSlotMachine){
 SlotMachine2.addEventListener("click", ()=>{
 if(clickCount >= costOfSlotMachine){
     clickCount-= costOfSlotMachine;
+    clicksDisplaied();
     let chance = Math.random();
     if (chance < 0.01){
         SlotMachine2.innerText="Great Plunder!!! you Win Rare prize keep spinning for 100 clicks?";

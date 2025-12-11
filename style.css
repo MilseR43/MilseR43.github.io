@@ -19,10 +19,9 @@ body {
     align-items: center;
     font-size: 15px;
 }
-
 h1,
 h2,
-h3 {
+h3{
     color: var(--text2);
     font-family: "Agu display";
     background: var(--secondary);
@@ -34,7 +33,7 @@ li::marker {
     color: var(--accent);
 }
 
-img {
+.img {
     padding: 1%;
     border: 4px solid var(--accent);
     border-radius: 16px;
@@ -93,6 +92,7 @@ img {
 }
 
 .topborder{
+    font-size: 100%;
      border-radius: 20px;
     border: 10px solid var(--accent);
     padding:20px;
@@ -102,3 +102,9 @@ img {
     height: 57px;
     background:var(--secondary);
 }
+.abstractBlack{
+    display:flex;
+    flex-wrap: wrap;
+    transform: rotate(90deg);
+}
+

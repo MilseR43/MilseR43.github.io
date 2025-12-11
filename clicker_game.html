@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CCC cookie clicker club </title>
+    <link rel="stylesheet" href="clickergame.css">
 </head>
 
 <body>
     <h1>
-        CCC Click
+        click the brownie to collect brownies!
     </h1>
     <h2>
-        <button id="clickButton">Click me!</button>
-        <p>Clicks: <span id="clickCountDisplay"></span></p>
-        <button id="Upgrade1"> first Upgrade at 10 clicks</button>
+        <button class="clickButton" id="clickButton"></button>
+        <p>Brownies Baked: <span id="clickCountDisplay"></span></p>
+        <p id="costForEquipment">Buy Better Equipment For 10 Brownies?</p>
+        <button class="upgrade1"id="Upgrade1"></button>
         <button id="SlotMachine">Gamble for the chance of a prize for 100 clicks</button>
         <button id="SlotMachine2">Gamble for the chance of a rare prize for 100 clicks </button>
-    
+        <div id="anouncement">
+    <p id="Upgrade1Display"></p>
+        </div>
     </h2>
     <h3>
         <audio id="ekhSfx" controls src="audio/ekh.mp3" hidden></audio>

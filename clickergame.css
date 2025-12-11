@@ -1,0 +1,18 @@
+.clickButton{
+     all: unset;
+        cursor: pointer;
+        background-image: url("images/brownie.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        width: 100px; 
+        height: 100px;
+}
+.upgrade1{
+        background-image: url("images/standMixer.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        width: 100px; 
+        height: 100px;
+}
