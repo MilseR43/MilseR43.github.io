@@ -10,10 +10,6 @@ const slotMachineWinSfx=document.getElementById("slotMachineWinSfx");
 
 const slotMachineLoseSfx=document.getElementById("slotMachineLoseSfx");
 
-const slotMachineLoseImg=document.getElementById("slotMachineLoseImg");
-
-const slotMachineWinImg=document.getElementsByName("slotMachineWinImg");
-
 const clickCountDisplay=document.getElementById("clickCountDisplay");
 
 const ekhSfx=document.getElementById("ekhSfx");
@@ -22,15 +18,17 @@ const Upgrade1Display=document.getElementById("Upgrade1Display");
 
 const costForEquipment=document.getElementById("costForEquipment");
 
+const slotMachineInnerText=document.getElementById("slotMachineInnerText");
+
+const slotMachine2InnerText=document.getElementById("slotMachine2InnerText");
+
 let clickCount = 0;
 
 let costOfUpgrade1= 10;
 
 let multiplier=1;
 
-let upgradeCost=2;
-
-let costOfSlotMachine=1;
+let costOfSlotMachine=100;
 
 setTimeout(()=>{
 const sometext=document.getElementById("Upgrade1Display")
@@ -38,7 +36,7 @@ const sometext=document.getElementById("Upgrade1Display")
 );
 
 function clicksDisplaied(){
-    clickCountDisplay.innerText=clickCount + " Brownies!"
+    clickCountDisplay.innerText=clickCount + " Clicks!"
 }
 
 clickButton.addEventListener("click", ()=>{
@@ -54,11 +52,11 @@ if (clickCount >= costOfUpgrade1){
     multiplier++;
     costOfUpgrade1*=2;
     clicksDisplaied();
-    costForEquipment.innerText= "Buy better equipment for "+ costOfUpgrade1 + " Brownies?"
-    Upgrade1Display.innerText="Now you bake "+ multiplier +" brownies per click!"
+    costForEquipment.innerText= "Purchace an Upgrade For "+ costOfUpgrade1 + " Clicks?"
+    Upgrade1Display.innerText="Now every click you click at "+ multiplier +" the original rate!"
 }
 else{
-    clickCountDisplay.innerText="not enough brownies."
+    clickCountDisplay.innerText="not enough clicks."
 }
 
 });
@@ -67,37 +65,35 @@ if(clickCount >= costOfSlotMachine){
     clickCount-= costOfSlotMachine;
     clicksDisplaied();
     let chance = Math.random();
-    if (chance < 1){
-    SlotMachine.innerText="Great Plunder!!! you Win common prize, keep spinning for 100 clicks?";
+    if (chance < .1){
+    slotMachineInnerText.innerText="Great Plunder!!! you Win common prize, keep spinning for 100 clicks?";
     slotMachineWinSfx.play();
     slotMachineWinSfx.currentTime=0;
-    slotMachineWinImg.hidden=false;
 }
         else{
-        SlotMachine.innerText="you Lose, try again for 100 clicks?";
+        slotMachineInnerText.innerText="you Lose, try again for 100 clicks?";
         slotMachineLoseSfx.play();
         slotMachineLoseSfx.currentTime=0;
-        slotMachineLoseImg.hidden=false;
     }
 }
 
 });
+
 SlotMachine2.addEventListener("click", ()=>{
 if(clickCount >= costOfSlotMachine){
     clickCount-= costOfSlotMachine;
     clicksDisplaied();
     let chance = Math.random();
-    if (chance < 0.01){
-        SlotMachine2.innerText="Great Plunder!!! you Win Rare prize keep spinning for 100 clicks?";
+    if (chance < .1){
+    slotMachineInnerText.innerText="Great Plunder!!! you Win Rare prize, keep spinning for 100 clicks?";
     slotMachineWinSfx.play();
     slotMachineWinSfx.currentTime=0;
-    slotMachineWinImg.hidden=false;
 }
         else{
-        SlotMachine2.innerText="you Lose, try again for 100 clicks?";
+        slotMachineInnerText.innerText="you Lose, try again for 100 clicks?";
         slotMachineLoseSfx.play();
         slotMachineLoseSfx.currentTime=0;
-        slotMachineLoseImg.hidden=false;
     }
 }
+
 });

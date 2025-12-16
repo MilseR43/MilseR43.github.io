@@ -19,6 +19,7 @@ body {
     align-items: center;
     font-size: 15px;
 }
+
 h1,
 h2,
 h3{
@@ -26,18 +27,8 @@ h3{
     font-family: "Agu display";
     background: var(--secondary);
     border: 4px solid var(--accent);
+    border-radius: 20px;
     padding: 5px;
-}
-
-li::marker {
-    color: var(--accent);
-}
-
-.img {
-    padding: 1%;
-    border: 4px solid var(--accent);
-    border-radius: 16px;
-    background: var(--secondary);
 }
 
 .sample {
@@ -57,17 +48,17 @@ li::marker {
 }
 
 .title {
-    height: 210px;
+    height: 180px;
     width: 710px;
-    border-radius: 20px;
-    border: 10px solid var(--accent);
-    padding:20px;
+    border-radius:20px;
+    border: 10px solid var(--dt);
+    padding: .6em;
     align-items: flex-end;
-    background: var(--secondary);
+    background: var(--primary);
 }
 
 .title2 {
-    font-size: 4rem;
+    font-size: 6.59rem;
 }
 
 .links {
@@ -90,21 +81,86 @@ li::marker {
     justify-content: space-between;
     gap: 100.67px;
 }
+.img {
+    padding: 1%;
+    border: 4px solid var(--dt);
+    border-radius: 16px;
+    background: var(--primary);
+}
 
 .topborder{
     font-size: 100%;
      border-radius: 20px;
-    border: 10px solid var(--accent);
+    border: 10px solid var(--dt);
     padding:20px;
      display: flex;
     justify-content: space-between;
     gap: 100.67px;
     height: 57px;
-    background:var(--secondary);
-}
-.abstractBlack{
-    display:flex;
-    flex-wrap: wrap;
-    transform: rotate(90deg);
+    background:var(--primary);
 }
 
+.btn{
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+border: 4px solid #0a0a24;
+background: #251d40;
+padding: 0px 5px;
+font-size: 1rem;
+font-family: "Agu display";
+cursor: pointer;
+margin: .5px;
+transition: .5s;
+}
+.btn1{
+    color:#cac3e3;
+}
+.btn1:hover{
+    color: #fff
+}
+.gallerytitle{
+    background-color: #251d40;
+    width: 100%;
+    height: 220px;
+    font-size:8rem;
+    border-radius: 0px;
+    border: 4px solid var(--background);
+}
+
+img{
+    border-radius: 15px;
+    flex-wrap:wrap;
+    margin: 1rem;
+}
+.homebtn{
+    font-size: 5rem;
+}
+.gallerytext{
+    font-size: 2rem;
+}
+.slotMachine{
+        background-image: url("images/SlotMachine.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        cursor: pointer;
+        width: 100px; 
+        height: 100px;
+}
+.btn2{
+border-radius: 20px;
+border: 4px solid #fff;
+background: #cac3e3;
+padding: 0px 5px;
+font-size: 1rem;
+font-family: "Agu display";
+cursor: pointer;
+margin: .5px;
+transition: .5s;
+}
+.btn3{
+    color:#251d40;
+}
+.btn3:hover{
+    color: #000
+}
